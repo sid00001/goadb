@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zach-klippenstein/goadb/internal/errors"
-	"github.com/zach-klippenstein/goadb/wire"
+	"https://github.com/sid00001/goadb/internal/errors"
+	"https://github.com/sid00001/goadb/wire"
 )
 
 func TestParseDeviceStatesSingle(t *testing.T) {

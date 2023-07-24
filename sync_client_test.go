@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/zach-klippenstein/goadb/internal/errors"
-	"github.com/zach-klippenstein/goadb/wire"
+	"https://github.com/sid00001/goadb/internal/errors"
+	"https://github.com/sid00001/goadb/wire"
 )
 
 var someTime = time.Date(2015, 5, 3, 8, 8, 8, 0, time.UTC)
