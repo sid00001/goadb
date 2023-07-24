@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/sid00001/goadb/internal/errors"
+	"github.com/sid00001/goadb/wire"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"https://github.com/sid00001/goadb/internal/errors"
-	"https://github.com/sid00001/goadb/wire"
 )
 
 var someTime = time.Date(2015, 5, 3, 8, 8, 8, 0, time.UTC)

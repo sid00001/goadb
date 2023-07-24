@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/sid00001/goadb/wire"
 	"github.com/stretchr/testify/assert"
-	"https://github.com/sid00001/goadb/wire"
 )
 
 func TestReadNextChunk(t *testing.T) {

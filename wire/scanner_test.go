@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/sid00001/goadb/internal/errors"
 	"github.com/stretchr/testify/assert"
-	"https://github.com/sid00001/goadb/internal/errors"
 )
 
 func TestReadStatusOkay(t *testing.T) {

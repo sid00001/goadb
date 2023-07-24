@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"https://github.com/sid00001/goadb/internal/errors"
-	"https://github.com/sid00001/goadb/wire"
+	"github.com/sid00001/goadb/internal/errors"
+	"github.com/sid00001/goadb/wire"
 )
 
 /*

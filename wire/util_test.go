@@ -3,8 +3,8 @@ package wire
 import (
 	"testing"
 
+	"github.com/sid00001/goadb/internal/errors"
 	"github.com/stretchr/testify/assert"
-	"https://github.com/sid00001/goadb/internal/errors"
 )
 
 func TestAdbServerError_NoRequest(t *testing.T) {

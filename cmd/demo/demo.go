@@ -8,8 +8,8 @@ import (
 	"log"
 	"time"
 
-	adb "https://github.com/sid00001/goadb"
-	"https://github.com/sid00001/goadb/internal/errors"
+	adb "github.com/sid00001/goadb"
+	"github.com/sid00001/goadb/internal/errors"
 )
 
 var (

@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 
-	"https://github.com/sid00001/goadb/internal/errors"
+	"github.com/sid00001/goadb/internal/errors"
 )
 
 type DeviceInfo struct {
