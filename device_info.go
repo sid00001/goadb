@@ -2,6 +2,7 @@ package adb
 
 import (
 	"bufio"
+	"log"
 	"strings"
 
 	"github.com/zach-klippenstein/goadb/internal/errors"
@@ -65,6 +66,7 @@ func parseDeviceShort(line string) (*DeviceInfo, error) {
 }
 
 func parseDeviceLong(line string) (*DeviceInfo, error) {
+	log.Println("LINE", line)
 	fields := strings.Fields(line)
 
 	attrs := parseDeviceAttributes(fields[2:])
@@ -74,8 +76,12 @@ func parseDeviceLong(line string) (*DeviceInfo, error) {
 func parseDeviceAttributes(fields []string) map[string]string {
 	attrs := map[string]string{}
 	for _, field := range fields {
+		log.Println("FIELD", field)
 		key, val := parseKeyVal(field)
-		attrs[key] = val
+
+		if key != "" {
+			attrs[key] = val
+		}
 	}
 	return attrs
 }
@@ -83,5 +89,10 @@ func parseDeviceAttributes(fields []string) map[string]string {
 // Parses a key:val pair and returns key, val.
 func parseKeyVal(pair string) (string, string) {
 	split := strings.Split(pair, ":")
+
+	if len(split) != 2 {
+		return split[0], ""
+	}
+
 	return split[0], split[1]
 }
